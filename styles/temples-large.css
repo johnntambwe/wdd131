@@ -1,0 +1,59 @@
+@media screen and (min-width: 500px) {
+
+    header h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    #menu.open {
+        display: none;
+    }
+
+    nav {
+        background-color: #000;
+    }
+
+    .navigation {
+        text-align: center;
+        display: flex;
+        color: black;
+    }
+
+    .navigation li {
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .navigation a:hover,
+    .navigation a:active {
+        color: #00008B;
+        background-color: #eee;
+    }
+
+    /* ------main----- */
+    main h1 {
+        /* color: #00008B; */
+        text-align: left;
+    }
+
+    main div {
+        max-width: 800px;
+        margin: 0 auto;
+        display: grid;
+        grid-template: auto auto auto/ 1fr 1fr;
+        gap: 1rem;
+        grid-auto-flow: column;
+    }
+
+
+    figure {
+        border: 2px solid #ace;
+        text-align: center;
+    }
+
+
+}

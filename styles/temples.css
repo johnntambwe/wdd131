@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+header h1 {
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: #00008B;
+    color: #eee;
+}
+
+/* Mobile View ***************/
+
+/* -----Hamburger Menu------ */
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: #eee;
+    color: #000;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    background-color: #00008B;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    /* text-align: left; */
+    text-align: left;
+    text-decoration: none;
+    color: #eee;
+    font-weight: 600;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: black;
+    background-color: #ace;
+}
+
+.open li {
+    display: block;
+}
+
+#menu.open::before {
+    content: "x";
+}
+
+/* ------main section------- */
+main h1 {
+    text-align: center;
+    color: #ace;
+}
+
+figcaption {
+    color: #00008B;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+figure img {
+    width: 15em;
+    height: 10rem;
+}
+
+
+figure {
+    border: 2px solid #ace;
+    text-align: center;
+    padding: 0.8rem;
+    margin: 1rem;
+}
+
+.active::before {
+    content: "✅";
+}
+
+/* ----Footer section---- */
+footer {
+    padding: 2rem;
+    color: #eee;
+    background-color: #00008B;
+    text-align: center;
+}
