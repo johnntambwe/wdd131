@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Country Page</title>
+    <meta name="description" content="W03 Assignment: Country Page.">
+    <meta name="author" content="John Ntambwe">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/place.css">
+    <link rel="stylesheet" href="./styles/place-large.css">
+    <script src="./scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Zambia Place</h1>
+
+    </header>
+    <div class="black-tap"></div>
+    <div class="orange-tap"></div>
+
+    <main>
+        <div class="picture">
+            <picture>
+                <!-- <source media="(min-width: 1000px)" srcset="./images/place/zambia-elephants-large.webp"> -->
+                <source media="(min-width: 1000px)" srcset="./images/place/zambia-map-small.webp">
+                <source media="(min-width: 500px)" srcset="./images/place/zambia-elephants-small.webp">
+                <img id="img" src="./images/place/zambia-map-small.webp" alt="Zambia map">
+            </picture>
+        </div>
+
+        <div class="data">
+            <h2>Data</h2>
+            <p>Area: 752,614 km²</p>
+            <p>population: 20.72 million</p>
+            <p>Capital: Lusaka</p>
+            <p>Languages: Nyanja, English</p>
+            <p>Currency: Kwacha</p>
+            <p>Time Zone: UTC+2</p>
+            <p>Calling Code: +260</p>
+            <p>Internet TLD: .mg</p>
+
+        </div>
+
+        <div class="weather">
+            <img class="icon" src="./images/place/weather_clouds_sun_sunny_icon.svg" alt="Weather icon" width="150">
+            <h2>Weather</h2>
+            <p>Temperature: 16°C</p>
+            <p>Conditions: Clear with periodic clouds</p>
+            <p>Wind: 11 km/h</p>
+            <p id="wind-chill">Wind Chill: --</p>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> 🍃 John Ntambwe 🌏 Zambia.
+        </p>
+
+        <p id="lastModified"><span></span></p>
+    </footer>
+
+</body>
+
+</html>
